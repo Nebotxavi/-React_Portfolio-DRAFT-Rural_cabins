@@ -9,17 +9,21 @@ import { Footer } from "./components/Footer";
 import { Home } from "./pages/Home";
 import { NavBar } from "./components/NavBar";
 
+import { CabinProvider } from "./dataProvider";
+
 export function App() {
   return (
-    <Router>
-      <NavBar />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/cabins" component={Cabins} />
-        <Route path="/cabins/:id" component={Cabin} />
-        <Route component={Error} />
-      </Switch>
-      <Footer />
-    </Router>
+    <CabinProvider>
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/cabins" component={Cabins} />
+          <Route path="/cabins/:id" component={Cabin} />
+          <Route component={Error} />
+        </Switch>
+        <Footer />
+      </Router>
+    </CabinProvider>
   );
 }
