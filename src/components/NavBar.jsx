@@ -6,10 +6,10 @@ export const NavBar = () => {
     <nav>
       <div>
         <div>
-          <Link to="/link1">Link1</Link>
+          <Link to="/">Home</Link>
         </div>
         <div>
-          <Link to="/link2">Link2</Link>
+          <Link to="/cabins">Cabins</Link>
         </div>
       </div>
       <div>

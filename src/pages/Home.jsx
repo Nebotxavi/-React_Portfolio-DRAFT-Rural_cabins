@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Banner } from "../components/Banner";
-import { FeaturedRooms } from "../components/FeaturedRooms";
+import { FeaturedCabins } from "../components/FeaturedCabins";
 import { ImgContainer } from "../components/ImgContainer";
 import { Services } from "../components/Services";
 import { SeparationImg } from "../components/SeparationImg";
@@ -18,7 +18,7 @@ export const Home = () => {
 
       <Services />
       <SeparationImg />
-      <FeaturedRooms />
+      <FeaturedCabins />
     </>
   );
 };
