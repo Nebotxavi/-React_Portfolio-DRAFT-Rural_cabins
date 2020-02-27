@@ -21,7 +21,6 @@ export const Cabin = ({ match }) => {
 
   const {
     name,
-    type,
     price,
     size,
     capacity,
